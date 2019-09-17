@@ -20,7 +20,7 @@ function out()
 while [ $? == 0 ]
 do
 	echo -n ">>>>>>>>  $i  <<<<<<<"
-	./data > simple.iN
+	./data > simple.in
 	cat simple.in | ./std > std.out
 	cat simple.in | ./my > my.out
 	outstr=$(diff std.out my.out)
