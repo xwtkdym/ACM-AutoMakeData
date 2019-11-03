@@ -2,10 +2,10 @@
 
 只需要写好files下的
 ``` sh
-  generator.cpp
-  validator.cpp
-  std.cpp
-  problem.tex
+  generator.cpp (数据生成器)
+  validator.cpp (数据验证器)
+  std.cpp       (标程)
+  problem.tex   (题目)
 ```
 然后执行 
 ``` sh
