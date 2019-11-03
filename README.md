@@ -1,8 +1,14 @@
-# ACM-AutoMakeData
-自动根据标程和数据产生代码 得到数据zip格式压缩包
+### ACM-AutoMake
 
-编辑好数据生成程序源码 data.cc
-编辑好数据生成标程源码 std.cc
-在当前目录运行 ./auto.sh
-上传alldata文件夹内的upload.zip
-然后解压
+只需要写好files下的
+``` sh
+  generator.cpp
+  validator.cpp
+  std.cpp
+  problem.tex
+```
+然后执行 
+``` sh
+bash tools/doall.sh
+```
+即可在problem目录下得到problem.zip的题目压缩包(domjudge)
