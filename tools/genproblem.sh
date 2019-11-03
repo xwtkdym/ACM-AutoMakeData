@@ -15,9 +15,9 @@ TEX_FILE=files/problem.tex
 
 ### sec ### domjudge-problem.ini
 timelimit=1
-### kb ### problem.yaml
-memory_limit=$((512*1024)) 
-output_limit=$((512*1024))
+### MB ### problem.yaml
+memory_limit=$((512)) 
+output_limit=$((512))
 
 ### gen domjudge-problem.ini ###
 echo "timelimit:\'${timelimit}\'" > $WORK_DIR/domjudge-problem.ini
