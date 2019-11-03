@@ -20,7 +20,7 @@ memory_limit=$((512))
 output_limit=$((512))
 
 ### gen domjudge-problem.ini ###
-echo "timelimit:\'${timelimit}\'" > $WORK_DIR/domjudge-problem.ini
+echo "timelimit='${timelimit}'" > $WORK_DIR/domjudge-problem.ini
 
 
 ### gen problem.yaml
@@ -47,4 +47,4 @@ xelatex --shell-escape -8bit --interaction=nonstopmode problem.tex 2>>/dev/null 
 cd $NOW_DIR
 
 cp /tmp/$hashval/*.pdf $WORK_DIR/problem.pdf
-cd $WORK_DIR && zip -9 problem.zip ./*
+cd $WORK_DIR && zip -9 problem.zip -r ./*
