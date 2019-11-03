@@ -43,7 +43,7 @@ cp $DATA_DIR/*.ans $WORK_DIR/data/secret
 hashval=$(sha256sum $TEX_FILE | cut -d ' ' -f 1)
 [ ! -d /tmp/$hashval ] && mkdir /tmp/$hashval
 cp $TEX_FILE /tmp/$hashval && cd /tmp/$hashval
-pdflatex --interaction=nonstopmode problem.tex 2>>/dev/null >> /dev/null
+xelatex --shell-escape -8bit --interaction=nonstopmode problem.tex 2>>/dev/null >> /dev/null
 cd $NOW_DIR
 
 cp /tmp/$hashval/*.pdf $WORK_DIR/problem.pdf

@@ -31,6 +31,7 @@ do
 	bash scripts/std.sh -b $BIN_DIR/std -i $INPUT_FILE -o $OUTPUT_FILE
 	[ $? -ne 0 ] && exit 0
 done
+echo ""
 
 bash tools/genproblem.sh 2>>/dev/null >> /dev/null
 [ $? -ne 0 ] && exit 1

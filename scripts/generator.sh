@@ -44,7 +44,7 @@ do
 done
 [ ! -f $BIN ] && error "$BIN no exist!"
 
-exec $BIN $RAMDOM > "$OUT_FILE"
+exec $BIN $RANDOM > "$OUT_FILE"
 
 [ $? -ne 0 ] && exit 1
 exit 0
